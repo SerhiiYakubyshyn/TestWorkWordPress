@@ -1,0 +1,269 @@
+*{
+	font-family: Inter !important;
+}
+.conteiner{
+  border-radius: 7px !important;
+  background-color: #e6e6e6 !important;
+  min-width: 200px !important;
+  width: 75% !important;
+  margin: auto !important;
+  padding-top: 5% !important;
+  margin-top: 8% !important;
+  margin-bottom: 8% !important;
+  font-size: 26px !important;
+}
+
+ul{
+ list-style: none !important;
+ }
+
+ #breadcrumbs{
+  background: white;
+  border-radius: 7px;
+  overflow: hidden;
+  max-width: 65%;
+  margin-left: 10%;
+  padding-left: 0.5%;
+}
+#breadcrumbs li{
+  padding: 2%;
+  margin-right: 3%;
+}
+#breadcrumbs a{
+  text-decoration: none;
+  position: relative;
+  background-color: white;
+  cursor: default;
+}
+
+#breadcrumbs a::after,
+#breadcrumbs a::before{
+  content: "";
+  position: absolute;
+  top: 55%;
+  margin-top: -1.3em;
+  border-top: 1.3em solid transparent;
+  border-bottom: 1.3em solid transparent;
+  border-left: 1em solid;
+  right: -1em;
+  margin-left: 15%;
+}
+#breadcrumbs .first::after,
+#breadcrumbs .first::before{
+  top: 50%;
+}
+#breadcrumbs a::after{
+  z-index: 2;
+  border-left-color: white;
+}
+
+#breadcrumbs a::before{
+  border-left-color: #ccc;
+  right: -1.1em;
+  z-index: 1;
+}
+
+#breadcrumbs .current::after,
+#breadcrumbs .current::before{
+  content: normal;
+}
+
+.h1Bigest{
+  font-size: 70px;
+  font-weight: 600;
+  margin-right: 2%;
+}
+@media (min-width: 10px) {
+  .h1Bigest {
+    font-size: 30px;
+  }
+  #priceText{
+    font-size: 30px;
+  }
+  #breadcrumbs {
+    font-size: 14px;
+  }
+  .img-home{
+    max-height: 20px;
+    max-width: 20px;
+  }
+  .alingRight {
+    text-align: center;
+  }
+  .inputStyle{
+    font-size: 16px !important;
+  }
+  .listMenu{
+    height: 300px;
+  }
+  .buttunconteiner{
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 330px) {
+  .h1Bigest {
+    font-size: 40px;
+  }
+  #priceText{
+    font-size: 50px;
+  }
+  #breadcrumbs {
+    font-size: 18px;
+  }
+  .img-home{
+    max-height: 25px;
+    max-width: 25px;
+  }
+  .inputStyle{
+    font-size: 26px !important;
+  }
+  .listMenu{
+    height: 380px;
+  }
+  #breadcrumbs {
+    font-size: 22px;
+  }
+  .img-home{
+    max-height: 35px;
+    max-width: 35px;
+  }
+}
+@media (min-width: 475px) {
+  .h1Bigest {
+    font-size: 50px;
+  }
+  .listMenu{
+    height: 450px;
+  }
+  #priceText{
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 600px) {
+  .h1Bigest {
+    font-size: 70px;
+  }
+  .inputStyle{
+    font-size: 42px !important;
+  }
+  .buttunconteiner{
+    margin-left: 2%;
+  }
+  #priceText{
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 700px) {
+  .alingRight {
+    text-align: right;
+  }
+  #priceText{
+    font-size: 100px;
+  }
+}
+@media (min-width: 900px) {
+  #priceText{
+    font-size: 180px;
+  }
+}
+.marginRow{
+  margin-top: 4%;
+}
+small{
+  color: #999999 !important;
+  font-weight: bold !important;
+}
+button, input{
+  border-radius: 7px !important;
+}
+
+.inputStyle{
+  border-color: #d9d9d9 !important;
+  border-width: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-left: 2% !important;
+  margin-right: 10% !important;
+  padding: 1% !important;
+}
+
+.inputStyle[type='number'] {
+    -moz-appearance: textfield !important;
+}
+
+#priceText{
+  margin: 0px !important;
+  padding: 2% !important;
+  background-color: #e6e6e6 !important;
+  border-width: 0px !important;
+  max-width: 90%;
+}
+.inputStyle::-webkit-outer-spin-button,
+.inputStyle::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+.registerMenu{
+  margin-left: 10%;
+}
+
+button{
+  border-color: #5679e1 !important;
+  border-width: 0px !important;
+  font-size: 22px !important;
+  padding: 1.8% !important;
+  cursor: pointer !important;
+  margin-top: 2% !important;
+  margin-left: 1.5% !important;
+  margin-right: 1% !important;
+}
+#continue, #send, #start{
+  background-color: #2a5bef;
+  color: white;
+}
+#back{
+  color: #2a5bef;
+  background-color: hsl(0, 0%, 97%);
+}
+#back, #send, #start{
+  display: none;
+}
+#Quantity, #Quantity, #Price, #Done{
+  display: none;
+}
+#contactInfoLi a{
+  color: #2a5bef;
+}
+#quantityLi a, #priceLi a, #doneLi a{
+  color: #4d4d4d;
+}
+.buttunconteiner{
+  padding-top: 2%;
+  padding-bottom: 7%;
+  padding-right: 10%;
+  vertical-align: bottom;
+}
+#myTitleText, #descriptionText{
+  margin-left: 15% !important;
+  font-family: sans-serif !important;
+}
+#myTitleText{
+  font-size: 38px !important;
+  border: bold !important;
+}
+#descriptionText{
+  margin-bottom: 20%;
+  font-size: 26px;
+}
+.red{
+  color: red !important;
+  border: bold !important;
+}
+#doneIsSend, #doneDontSend{
+  display: none;
+}
+.feedbackSend{
+  padding-right: 5%;
+}
